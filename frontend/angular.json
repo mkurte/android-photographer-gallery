@@ -25,7 +25,8 @@
             "aot": true,
             "assets": [
               "apps/apg/src/favicon.ico",
-              "apps/apg/src/assets"
+              "apps/apg/src/assets",
+              "apps/apg/src/manifest.webmanifest"
             ],
             "styles": [
               "apps/apg/src/styles.scss"
@@ -59,7 +60,9 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "apps/apg/ngsw-config.json"
             }
           }
         },
@@ -89,7 +92,8 @@
             "karmaConfig": "apps/apg/karma.conf.js",
             "assets": [
               "apps/apg/src/favicon.ico",
-              "apps/apg/src/assets"
+              "apps/apg/src/assets",
+              "apps/apg/src/manifest.webmanifest"
             ],
             "styles": [
               "apps/apg/src/styles.scss"
