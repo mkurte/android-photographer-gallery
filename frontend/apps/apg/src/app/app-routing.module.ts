@@ -15,7 +15,7 @@ const appRoutes: Routes = [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'angular-demo' // Todo: redirect to a new component like list or home...
+        loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
       },
       {
         path: 'angular-demo',
